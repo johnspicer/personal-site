@@ -1,0 +1,40 @@
+[
+  {
+    "title": "Redeem App",
+    "slug": "project-1",
+    "content": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+    "technologies": [
+      "React Native",
+      "Stripe",
+      "Firebase"
+    ],
+    "icon": "phone",
+    "images": ["redeem-1.png","redeem-1.png","redeem-1.png", "fieldworks-1.png"],
+    "device": "iphone-x"
+  },
+  {
+    "title": "Fieldworks Platform",
+    "slug": "project-2",
+    "content": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+    "technologies": [
+      "Python",
+      "Django",
+      "HTML",
+      "Jinja2",
+      "AWS Elastic Beanstalk"
+    ],
+    "icon": "web",
+    "images": ["fieldworks-1.png","fieldworks-2.png"],
+    "device": "macbook-pro"
+  },
+  {
+    "title": "Warehouse Loader",
+    "slug": "project-3",
+    "content": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+    "technologies": [
+      "ElectronJS"
+    ],
+    "icon": "warehouse"
+
+  }
+]
