@@ -8,6 +8,7 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
+import GitHubIcon from '@material-ui/icons/GitHub';
 import { ProjectContainer } from './features/projects/ProjectContainer';
 import { InfoContainer } from './features/InfoContainer';
 import { AboutMeContainer } from './features/AboutMeContainer';
@@ -40,7 +41,12 @@ function App() {
       <InfoContainer/>
       <AboutMeContainer />
       <ProjectContainer/>
-      <AppBar className={classes.appBar} elevation={0} position="sticky"/>
+      <AppBar className={classes.appBar} elevation={0} position="sticky">
+        <Toolbar>
+          Built by me
+          <a href="https://github.com/johnspicer/personal-site" target="_blank" style={{color: "white"}}><GitHubIcon style={{marginLeft: 20}}/></a>
+        </Toolbar>
+      </AppBar>
     </div>
   );
 }
