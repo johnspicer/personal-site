@@ -25,6 +25,7 @@ const useStyles = makeStyles(theme => ({
       width: 400,
       marginLeft: "auto",
       marginRight: "auto",
+      backgroundColor: "#fdf6e3",
     },
   },
   [theme.breakpoints.up(870)]: {
@@ -70,7 +71,7 @@ export function DeviceContainer(props) {
 
   const renderDevice = (deviceName) => {
     return (
-      <div style={{transformOrigin: "top", transform: "scale(0.5)"}}>
+      <div style={{transformOrigin: "top center", transform: "scale(1)"}}>
         <div className={`device device-${deviceName} ${classes.device}`}>
           <div className="device-frame">
             <SwipeableViews
