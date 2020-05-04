@@ -22,6 +22,7 @@ const useStyles = makeStyles(theme => ({
         textAlign: "center",
         outline: 'none',
         overflow: "scroll",
+        backgroundColor: "#fdf6e3",
     },
     content: {
         width: "80%",
@@ -40,20 +41,35 @@ const useStyles = makeStyles(theme => ({
     },
     chipContainer: {
         marginTop: 20,
-        textAlign: "left",
+        maxWidth: 650,
+        marginRight: "auto",
+        marginLeft: "auto",
         color: "#073642",
     },
     chip: {
         marginLeft: 5,
+        marginBottom: 5,
         backgroundColor: "#268bd2",
         color: "#fdf6e3",
         fontFamily: "Avenir Next",
+    },
+    grid: {
+        marginTop: 20,
+        maxWidth: 650,
+        marginRight: "auto",
+        marginLeft: "auto",
     },
     [theme.breakpoints.up(600)]: {
         paper: {
             height: '90%',
             width: '70%',
             border: '2px solid #000',
+        }, 
+    },
+    [theme.breakpoints.up(600)]: {
+        paper: {
+            height: '90%',
+            width: '90%',
         }, 
     }
 }));
@@ -83,6 +99,15 @@ export function ProjectModal(props) {
                 </GridListTile>
             );
         })
+
+    const breakpoints = props.projectInfo.device.startsWith("iphone") ? {
+        xs: 12,
+        md: 6
+    } : {
+        xs: 12,
+        md: 12,
+    };
+
     return (
         <Modal
             open={true}
@@ -96,15 +121,17 @@ export function ProjectModal(props) {
                     <div className={classes.content}>
                         <div className={classes.titleText}>{props.projectInfo.title}</div>
                         <div className={classes.chipContainer}>
-                            Technologies: {chips}
+                            {chips}
                         </div>
-                        <DeviceContainer deviceName={props.projectInfo.device} images={props.projectInfo.images}/>
-                        <Grid style={{marginTop: 20}} container>
-                            <Grid className={classes.text} item xs={12} md={6}>
+                        <Grid className={classes.grid} container>
+                            <Grid className={classes.text} item xs={breakpoints.xs} md={breakpoints.md}>
                                 {props.projectInfo.content}
+                                <br/>
+                                <br/>
+                                {props.projectInfo.content2}
                             </Grid>
-                            <Grid item xs={12} md={6}>
-                                
+                            <Grid item xs={breakpoints.xs} md={breakpoints.md}>
+                                <DeviceContainer deviceName={props.projectInfo.device} images={props.projectInfo.images}/>
                             </Grid>
                         </Grid>
                         {/*<GridList cellHeight={700} className={classes.gridList} cols={2}>

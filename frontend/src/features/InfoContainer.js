@@ -7,7 +7,7 @@ const useStyles = makeStyles(theme => ({
         container: {
             height: 340,
             width: "100%",
-            backgroundColor: "#268bd2",
+            backgroundColor: "#eee8d5",
         },
         avatar: {
             width: 150,

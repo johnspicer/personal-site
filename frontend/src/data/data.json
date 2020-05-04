@@ -2,7 +2,8 @@
   {
     "title": "Redeem App",
     "slug": "project-1",
-    "content": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+    "content": "I was hired by The Redeem Network to build an iOS/Android app that would facilitate the donation of gifts to the homeless.",
+    "content2": "I built it using React Native, with Google Firebase as the backend. Payments are handled using Stripe. The project took 3 months to get to a feature complete prototype, available for testing on the App Store/Google Play",
     "technologies": [
       "React Native",
       "Stripe",
@@ -15,7 +16,8 @@
   {
     "title": "Fieldworks Platform",
     "slug": "project-2",
-    "content": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+    "content": "For the past 2 years I have worked with Fieldworks building a platform for grassroots NGOs to raise their profile, and facilitate receiving funding from global donors. There are currently 100 NGOs on the platform.",
+    "content2": "We hired a junior developer to help for 2 month period, but for 90% of the project I have been the only developer. I have managed all the testing and deployment to both staging and production, which runs on AWS Elastic Beanstalk",
     "technologies": [
       "Python",
       "Django",
@@ -24,7 +26,7 @@
       "AWS Elastic Beanstalk"
     ],
     "icon": "web",
-    "images": ["fieldworks-1.png","fieldworks-2.png"],
+    "images": ["fieldworks-1.png","fieldworks-2.png","fieldworks-3.png"],
     "device": "macbook-pro"
   },
   {
@@ -34,7 +36,19 @@
     "technologies": [
       "ElectronJS"
     ],
-    "icon": "warehouse"
-
+    "images": [],
+    "icon": "warehouse",
+    "device": ""
+  },
+  {
+    "title": "Boids",
+    "slug": "project-4",
+    "content": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+    "technologies": [
+      "PixiJS"
+    ],
+    "images": [],
+    "icon": "boids",
+    "device": ""
   }
 ]

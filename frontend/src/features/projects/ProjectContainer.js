@@ -16,7 +16,15 @@ const useStyles = makeStyles(theme => ({
         paddingTop: 30,
         paddingBottom: 30,
         color: "#6c71c4",
-    },    
+    },
+    text: {
+      maxWidth: 600,
+      marginLeft: "auto",
+      marginRight: "auto",
+      fontSize: 14,
+      textAlign: "left",
+      marginBottom: 20,
+    },
   },
   [theme.breakpoints.up(870)]: {
     gridContainer: {
@@ -24,6 +32,10 @@ const useStyles = makeStyles(theme => ({
       marginLeft: "auto",
       marginRight: "auto",
     },
+    text: {
+      fontSize: 18,
+      maxWidth: 870,
+    },    
   },  
   [theme.breakpoints.up('lg')]: {
     gridContainer: {
@@ -37,7 +49,7 @@ export function ProjectContainer() {
 
   const gridItems = data.map(project => {
       return (
-        <Grid className={classes.gridItem} item xs={12} sm={4}>
+        <Grid item xs={12} sm={4}>
           <ProjectCard projectInfo={project}/>
         </Grid>
       );
@@ -47,6 +59,9 @@ export function ProjectContainer() {
     <div style={{backgroundColor: "#eee8d5"}}>
       <div className={classes.titleText}>
           Projects
+      </div>
+      <div className={classes.text}>
+        Below are a selection of projects I've worked on - either in my own time, or on a freelance basis.
       </div>
       <Grid className={classes.gridContainer} container>
         {gridItems}

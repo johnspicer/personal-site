@@ -56,14 +56,25 @@ export function AboutMeContainer(props) {
     return (
         <div className={classes.container}>
             <div className={classes.titleText}>
-                About
+                Experience
             </div>
             <Grid className={classes.gridContainer} container spacing={4}>
-                <Grid className={classes.text} item xs={12} sm={6}>
-                    is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                </Grid>
-                <Grid className={classes.text} item xs={12} sm={6}>
-                    t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English
+                <Grid className={classes.text} item xs={12} sm={12}>
+                    I'm a software developer with 10 years experience across a range of technologies.
+                    My most recent permanent position has been at EDITED, a retail decision platform, where I've worked for 5 1/2 years.
+                    I joined the company at 21 people and it's now 100, and I've had a host of responsibilities.
+                    Some of these are:
+                    <ul>
+                        <li>Leading a team of 9 frontend and backend developers</li>
+                        <li>Having regular meetings with the commercial exec team, setting technical direction of the product</li>
+                        <li>Working daily with multiple <strong>Elasticsearch</strong> clusters, the largest being 100+ nodes</li>
+                        <li>Managing the ingestion of 24M data points per day across 5,500 <strong>web crawlers</strong></li>
+                        <li>Day to day working with services like <strong>RabbitMQ</strong>, <strong>Redis</strong>, <strong>Riak</strong>, <strong>Memcache</strong> </li>
+                        <li>Writing and managing multiple Python web services, in <strong>Django</strong> and <strong>Flask</strong></li>
+                        <li>Working across the frontends of multiple services, using <strong>React</strong></li>
+                        <li>Provisioning bare metal servers from multiple providers</li>
+                        <li>Writing and managing an <strong>Apache Storm</strong> cluster capable of processing thousands of messages per second</li>
+                    </ul>
                 </Grid>
             </Grid>
         </div>
