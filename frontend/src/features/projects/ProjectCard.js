@@ -4,6 +4,7 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
 import PublicIcon from '@material-ui/icons/Public';
 import CodeIcon from '@material-ui/icons/Code';
+import NearMeIcon from '@material-ui/icons/NearMe';
 import { makeStyles } from '@material-ui/core/styles';
 import { ProjectModal } from './ProjectModal';
 
@@ -96,6 +97,7 @@ export function ProjectCard(props) {
     const iconNameToComponentMap = {
         "phone": PhoneIphoneIcon,
         "web": PublicIcon,
+        "boids": NearMeIcon,
     }
 
     const IconComponent = iconNameToComponentMap[props.projectInfo.icon] || CodeIcon;
