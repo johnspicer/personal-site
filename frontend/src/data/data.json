@@ -3,21 +3,21 @@
     "title": "Redeem App",
     "slug": "project-1",
     "content": "I was hired by The Redeem Network to build an iOS/Android app that would facilitate the donation of gifts to the homeless.",
-    "content2": "I built it using React Native, with Google Firebase as the backend. Payments are handled using Stripe. The project took 3 months to get to a feature complete prototype, available for testing on the App Store/Google Play",
+    "content2": "The app allows users to login, see a geolocated list of nearby partner stores, and purchase a gift for homeless person at any of them. The store will then be notified and the gift can be redeemed upon collection, when payment will be taken. It is built using React Native, with Google Firebase as the backend. Payments are handled using Stripe. The project delivered a feature complete prototype, available for testing on the App Store/Google Play",
     "technologies": [
       "React Native",
       "Stripe",
       "Firebase"
     ],
     "icon": "phone",
-    "images": ["redeem-1.png","redeem-1.png","redeem-1.png", "fieldworks-1.png"],
+    "images": ["redeem-1.png","redeem-2.png","redeem-3.png","redeem-4.png","redeem-5.png","redeem-6.png","redeem-7.png"],
     "device": "iphone-x"
   },
   {
     "title": "Fieldworks Platform",
     "slug": "project-2",
-    "content": "For the past 2 years I have worked with Fieldworks building a platform for grassroots NGOs to raise their profile, and facilitate receiving funding from global donors. There are currently 100 NGOs on the platform.",
-    "content2": "We hired a junior developer to help for 2 month period, but for 90% of the project I have been the only developer. I have managed all the testing and deployment to both staging and production, which runs on AWS Elastic Beanstalk",
+    "content": "Fieldworks are a company who wanted to build a place for grassroots NGOs to raise their profile and facilitate receiving funding from global donors. I built and maintain the platform, which currently has 100 NGOs signed up.",
+    "content2": "The platform allows NGOs and donors to sign up, and has an extensive profile creation process. Profiles can then be searched for and donors can verify profiles to build trust on the platform. It's built as a Django app, with HTML/CSS and JS frontend. I have managed all the development, testing and deployment to both staging and production. It is currently running on AWS Elastic Beanstalk.",
     "technologies": [
       "Python",
       "Django",
@@ -32,13 +32,15 @@
   {
     "title": "Warehouse Loader",
     "slug": "project-3",
-    "content": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+    "content": "I was approached by one of the UK's biggest supermarkets to build an application to model the speed of picking grocery orders from a warehouse, given a number of different methods of stock layout.",
+    "content2": "The application outputs the total time to pick a number of sample orders. It uses an implementation of Dijkstra's algorithm to find the shortest route from one item to the next, and shows hotspots of busy warehouse traffic so this can be accounted for. It had to be cross platform, so I used Electron and wrote the UI in React and the logic in Javascript.",
     "technologies": [
+      "Javascript",
       "ElectronJS"
     ],
-    "images": [],
+    "images": ["warehouse-1.png","warehouse-2.png","warehouse-3.png","warehouse-4.png","warehouse-5.png","warehouse-6.png","warehouse-7.png"],
     "icon": "warehouse",
-    "device": ""
+    "device": "macbook-pro"
   },
   {
     "title": "Boids",
