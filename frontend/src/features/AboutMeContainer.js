@@ -7,7 +7,7 @@ const useStyles = makeStyles(theme => ({
     [theme.breakpoints.up(0)]: {
         container: {
             minHeight: 400,
-            backgroundColor: "#fdf6e3"
+            backgroundColor: "#fdf6e3",
         },
         titleText: {
             fontSize: 28,
@@ -15,38 +15,29 @@ const useStyles = makeStyles(theme => ({
             paddingBottom: 10,
             color: "#cb4b16",
         },
-        text: {
+        textContainer: {
             fontSize: 14,
+            maxWidth: 320,
+            marginLeft: "auto",
+            marginRight: "auto",
+            textAlign: "left",
         },
-        gridContainer: {
-          marginLeft: "auto",
-          marginRight: "auto",
-          maxWidth: 280,
-          textAlign: "left",
-        }
     },
-    [theme.breakpoints.up(375)]: {
-        gridContainer: {
-          maxWidth: 320,
-        }
-    },
-    [theme.breakpoints.up('sm')]: {
+    [theme.breakpoints.up(600)]: {
         titleText: {
             fontSize: 36,
             paddingTop: 30,
             paddingBottom: 30,
         },
-        text: {
+        textContainer: {
             fontSize: 18,
-        },        
-        gridContainer: {
-          maxWidth: 600,
-        }
+            maxWidth: 600,
+        },
     },
-    [theme.breakpoints.up('lg')]: {
-        gridContainer: {
-          maxWidth: 870,
-        }
+    [theme.breakpoints.up(870)]: {
+        textContainer: {
+            maxWidth: 870,
+        },       
     },
 }));
 
@@ -58,25 +49,22 @@ export function AboutMeContainer(props) {
             <div className={classes.titleText}>
                 Experience
             </div>
-            <Grid className={classes.gridContainer} container spacing={4}>
-                <Grid className={classes.text} item xs={12} sm={12}>
-                    I'm a software developer with 10 years experience across a range of technologies.
-                    My most recent permanent position has been at EDITED, a retail decision platform, where I've worked for 5 1/2 years.
-                    I joined the company at 21 people and it's now 100, and I've had a host of responsibilities.
-                    Some of these are:
-                    <ul>
-                        <li>Leading a team of 9 frontend and backend developers</li>
-                        <li>Having regular meetings with the commercial exec team, setting technical direction of the product</li>
-                        <li>Working daily with multiple <strong>Elasticsearch</strong> clusters, the largest being 100+ nodes</li>
-                        <li>Managing the ingestion of 24M data points per day across 5,500 <strong>web crawlers</strong></li>
-                        <li>Day to day working with services like <strong>RabbitMQ</strong>, <strong>Redis</strong>, <strong>Riak</strong>, <strong>Memcache</strong> </li>
-                        <li>Writing and managing multiple Python web services, in <strong>Django</strong> and <strong>Flask</strong></li>
-                        <li>Working across the frontends of multiple services, using <strong>React</strong></li>
-                        <li>Provisioning bare metal servers from multiple providers</li>
-                        <li>Writing and managing an <strong>Apache Storm</strong> cluster capable of processing thousands of messages per second</li>
-                    </ul>
-                </Grid>
-            </Grid>
+            <div className={classes.textContainer}>
+                I'm a full stack software developer with 10 years experience across a range of technologies.
+                My most recent permanent position has been as a Technical Architect at EDITED, a London based startup where I've worked for 5 1/2 years.
+                This has involved a large number of responsibilities, such as:
+                <ul style={{marginBottom: 0}}>
+                    <li>Leading a team of 9 frontend and backend developers</li>
+                    <li>Having regular meetings with the commercial exec team, setting technical direction of the product</li>
+                    <li>Working daily with multiple <strong>Elasticsearch</strong> clusters, the largest being 100+ nodes</li>
+                    <li>Managing the ingestion of 24M data points per day across 5,500 <strong>web crawlers</strong></li>
+                    <li>Day to day working with services like <strong>RabbitMQ</strong>, <strong>Redis</strong>, <strong>Riak</strong>, <strong>Memcache</strong> </li>
+                    <li>Writing and managing multiple Python web services, in <strong>Django</strong> and <strong>Flask</strong></li>
+                    <li>Working across the frontends of multiple services, using <strong>React</strong></li>
+                    <li>Provisioning bare metal servers from multiple providers</li>
+                    <li>Writing and managing an <strong>Apache Storm</strong> cluster capable of processing thousands of messages per second</li>
+                </ul>
+            </div>
         </div>
     )
 }
