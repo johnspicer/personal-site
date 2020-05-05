@@ -22,7 +22,7 @@ const useStyles = makeStyles(theme => ({
       marginRight: "auto",
     },  
     stepper: {
-      width: 400,
+      width: 214,
       marginLeft: "auto",
       marginRight: "auto",
       backgroundColor: "#fdf6e3",
@@ -37,6 +37,9 @@ const useStyles = makeStyles(theme => ({
       maxWidth: 870,
       marginLeft: "auto",
       marginRight: "auto",
+    },
+    stepper: {
+      width: 321,
     },
   },  
   [theme.breakpoints.up('lg')]: {

@@ -40,7 +40,7 @@ const useStyles = makeStyles(theme => ({
         textAlign: "left",
     },
     chipContainer: {
-        marginTop: 20,
+        marginTop: 10,
         maxWidth: 650,
         marginRight: "auto",
         marginLeft: "auto",
@@ -52,26 +52,21 @@ const useStyles = makeStyles(theme => ({
         backgroundColor: "#268bd2",
         color: "#fdf6e3",
         fontFamily: "Avenir Next",
+        fontSize: 18,
     },
     grid: {
-        marginTop: 20,
-        maxWidth: 650,
+        maxWidth: 800,
         marginRight: "auto",
         marginLeft: "auto",
     },
     [theme.breakpoints.up(600)]: {
         paper: {
             height: '90%',
-            width: '70%',
+            width: '90%',
+            maxWidth: 1100,
             border: '2px solid #000',
         }, 
     },
-    [theme.breakpoints.up(600)]: {
-        paper: {
-            height: '90%',
-            width: '90%',
-        }, 
-    }
 }));
 
 export function ProjectModal(props) {
@@ -137,7 +132,7 @@ export function ProjectModal(props) {
                         {/*<GridList cellHeight={700} className={classes.gridList} cols={2}>
                             {images}
                         </GridList>*/}
-                            {/*<iframe height="700" width="700" src="https://johnspicer.github.io/boids/"></iframe>*/}
+                        {/*<iframe height="700" width="700" src="https://johnspicer.github.io/boids/?height=680"></iframe>*/}
                     </div>
                 </div>
 

@@ -12,19 +12,30 @@ const useStyles = makeStyles(theme => ({
       marginRight: "auto",
     },
     titleText: {
-        fontSize: 36,
-        paddingTop: 30,
-        paddingBottom: 30,
+        fontSize: 28,
+        paddingTop: 10,
+        paddingBottom: 10,
         color: "#6c71c4",
     },
     text: {
-      maxWidth: 600,
+      maxWidth: 320,
       marginLeft: "auto",
       marginRight: "auto",
       fontSize: 14,
       textAlign: "left",
       marginBottom: 20,
     },
+  },
+  [theme.breakpoints.up(600)]: {
+      titleText: {
+          fontSize: 36,
+          paddingTop: 30,
+          paddingBottom: 30,
+      },
+      text: {
+        fontSize: 18,
+        maxWidth: 600,
+      },      
   },
   [theme.breakpoints.up(870)]: {
     gridContainer: {
