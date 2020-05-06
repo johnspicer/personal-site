@@ -21,6 +21,7 @@ const useStyles = makeStyles(theme => ({
             marginLeft: "auto",
             marginRight: "auto",
             textAlign: "left",
+            paddingBottom: 10,
         },
     },
     [theme.breakpoints.up(600)]: {
