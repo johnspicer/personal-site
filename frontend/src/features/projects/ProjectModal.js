@@ -59,13 +59,21 @@ const useStyles = makeStyles(theme => ({
         marginRight: "auto",
         marginLeft: "auto",
     },
-    [theme.breakpoints.up(600)]: {
+    [theme.breakpoints.up('lg')]: {
+        grid: {
+            width: 500,
+        },
         paper: {
             height: '90%',
             width: '90%',
             maxWidth: 1100,
             border: '2px solid #000',
         }, 
+    [theme.breakpoints.up(1000)]: {
+        grid: {
+            width: 800,
+        }
+    },
     },
 }));
 
