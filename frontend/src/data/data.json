@@ -41,16 +41,5 @@
     "images": ["warehouse-1.png","warehouse-2.png","warehouse-3.png","warehouse-4.png","warehouse-5.png","warehouse-6.png","warehouse-7.png"],
     "icon": "warehouse",
     "device": "macbook-pro"
-  },
-  {
-    "title": "Boids",
-    "slug": "project-4",
-    "content": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-    "technologies": [
-      "PixiJS"
-    ],
-    "images": [],
-    "icon": "boids",
-    "device": ""
   }
 ]
