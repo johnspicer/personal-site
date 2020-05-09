@@ -6,6 +6,10 @@ import data from '../../data/data.json';
 
 const useStyles = makeStyles(theme => ({
   [theme.breakpoints.up(0)]: {
+    container: {
+      backgroundColor: "#eee8d5",
+      paddingTop: 20,
+    },
     gridContainer: {
       maxWidth: 600,
       marginLeft: "auto",
@@ -15,7 +19,7 @@ const useStyles = makeStyles(theme => ({
         fontSize: 28,
         paddingTop: 10,
         paddingBottom: 10,
-        color: "#6c71c4",
+        color: "#268bd2",
     },
     text: {
       maxWidth: 320,
@@ -67,7 +71,7 @@ export function ProjectContainer() {
   });
 
   return (
-    <div style={{backgroundColor: "#eee8d5"}}>
+    <div className={classes.container}>
       <div className={classes.titleText}>
           Projects
       </div>

@@ -295,7 +295,7 @@
   }
 }
 
-@media(max-width: 850px) {
+@media(max-width: 750px) {
   .device-macbook-pro {
     height: 222px;
     width: 370px;
@@ -405,7 +405,7 @@
   }
 }
 
-@media(min-width: 851px) and (max-width: 1450px) {
+@media(min-width: 750px) and (max-width: 1450px) {
   .device-macbook-pro {
     height: 355px;
     width: 592px;

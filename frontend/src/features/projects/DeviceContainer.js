@@ -10,6 +10,12 @@ import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
 import SwipeableViews from 'react-swipeable-views';
 
 const useStyles = makeStyles(theme => ({
+  [theme.breakpoints.down(399)]: {
+    device: props => ({
+      marginLeft: props.deviceName == "macbook-pro" ? "-36px": "auto",
+      marginRight: "auto",
+    }),
+  },
   [theme.breakpoints.up(0)]: {
     container: {
       maxWidth: 850,
@@ -17,10 +23,6 @@ const useStyles = makeStyles(theme => ({
       marginRight: "auto",
       marginTop: 20,
   },
-    device: {
-      marginLeft: "auto",
-      marginRight: "auto",
-    },  
     stepper: {
       width: 214,
       marginLeft: "auto",
@@ -28,11 +30,13 @@ const useStyles = makeStyles(theme => ({
       backgroundColor: "#fdf6e3",
     },
   },
-  [theme.breakpoints.up(870)]: {
+  [theme.breakpoints.up(400)]: {
     device: {
       marginLeft: "auto",
       marginRight: "auto",
-    },
+    },  
+  },
+  [theme.breakpoints.up(870)]: {
     gridContainer: {
       maxWidth: 870,
       marginLeft: "auto",
@@ -52,7 +56,7 @@ const useStyles = makeStyles(theme => ({
 
 
 export function DeviceContainer(props) {
-  const classes = useStyles();
+  const classes = useStyles(props);
   const images = props.images;
   const matches = useMediaQuery('(min-width:1px)');
           {/*<video className="device-content" autoplay loop>

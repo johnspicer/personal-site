@@ -1,6 +1,7 @@
 import React from 'react';
 import Box from '@material-ui/core/Box';
 import { makeStyles } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
 
 const useStyles = makeStyles(theme => ({
     [theme.breakpoints.up(0)]: {
@@ -8,15 +9,7 @@ const useStyles = makeStyles(theme => ({
             height: 340,
             width: "100%",
             backgroundColor: "#eee8d5",
-        },
-        avatar: {
-            width: 150,
-            height:150,
-            borderRadius: "50%",
-        },
-        avatarContainer: {
-            paddingTop: 40,
-            paddingBottom: 20,
+            display: "table",
         },
         titleText: {
             fontSize: 28,
@@ -30,14 +23,15 @@ const useStyles = makeStyles(theme => ({
             maxWidth: 350,
             fontSize: 18,
         },
+        button: {
+            margin: theme.spacing(1),
+            color: "#268bd2",
+        },
     },
     [theme.breakpoints.up(600)]: {
         container: {
             height: 650,
             width: "100%",
-        },
-        avatarContainer: {
-            paddingTop: 80,
         },
         titleText: {
             fontSize: 36,
@@ -46,10 +40,6 @@ const useStyles = makeStyles(theme => ({
             fontSize: 28,
             maxWidth: 500,
         },
-        avatar: {
-            width: 300,
-            height:300,
-        },
     },
     [theme.breakpoints.up('lg')]: {
     },
@@ -57,21 +47,22 @@ const useStyles = makeStyles(theme => ({
 
 export function InfoContainer(props) {
     const classes = useStyles();
+    console.log(props)
+    const handleClick = () => {
+        props.blah.scrollIntoView()
+        // window.scrollTo({left: 0, top: window.innerHeight, behavior: 'smooth'});
+    }
 
     return (
         <div className={classes.container}>
-            <Box className={classes.avatarContainer}>
-                <img
-                className={classes.avatar}
-                src="https://www.nicepng.com/png/detail/810-8105444_male-placeholder.png"
-                />
-            </Box>
-            <div className={classes.titleText}>
-                John Spicer
-            </div>
-            <hr style={{borderColor: "black", width: 200}}/>
-            <div className={classes.infoText}>
-                Freelance Software Engineer
+            <div style={{"display": "table-cell", "verticalAlign": "middle"}}>
+                <div className={classes.titleText}>
+                    John Spicer
+                </div>
+                <hr style={{borderColor: "black", width: 200}}/>
+                <div className={classes.infoText}>
+                    Freelance Software Engineer
+                </div>
             </div>
         </div>
     )

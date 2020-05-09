@@ -7,13 +7,14 @@ const useStyles = makeStyles(theme => ({
     [theme.breakpoints.up(0)]: {
         container: {
             minHeight: 400,
+            paddingTop: 20,
             backgroundColor: "#fdf6e3",
         },
         titleText: {
             fontSize: 28,
             paddingTop: 10,
             paddingBottom: 10,
-            color: "#cb4b16",
+            color: "#268bd2",
         },
         textContainer: {
             fontSize: 14,
@@ -21,7 +22,8 @@ const useStyles = makeStyles(theme => ({
             marginLeft: "auto",
             marginRight: "auto",
             textAlign: "left",
-            paddingBottom: 10,
+            paddingBottom: 20,
+            color: "#002b36",
         },
     },
     [theme.breakpoints.up(600)]: {

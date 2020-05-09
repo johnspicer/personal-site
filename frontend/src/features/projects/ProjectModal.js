@@ -40,7 +40,8 @@ const useStyles = makeStyles(theme => ({
         textAlign: "left",
     },
     chipContainer: {
-        marginTop: 10,
+        marginTop: 30,
+        marginBottom: 30,
         maxWidth: 650,
         marginRight: "auto",
         marginLeft: "auto",
