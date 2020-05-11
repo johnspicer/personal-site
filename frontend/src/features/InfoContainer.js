@@ -1,14 +1,15 @@
 import React from 'react';
+import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
 import { makeStyles } from '@material-ui/core/styles';
+import MailOutlineIcon from '@material-ui/icons/MailOutline';
 
 const useStyles = makeStyles(theme => ({
     [theme.breakpoints.up(0)]: {
         container: {
-            height: 340,
+            height: 370,
             width: "100%",
             backgroundColor: "#eee8d5",
-            display: "table",
         },
         avatar: {   
             width: 150, 
@@ -31,6 +32,13 @@ const useStyles = makeStyles(theme => ({
             maxWidth: 350,
             fontSize: 18,
         },
+        emailButton: {
+            display: "flex",
+            width: 200,
+            marginLeft: "auto",
+            marginRight: "auto",
+            textDecoration: "none",
+        }
     },
     [theme.breakpoints.up(600)]: {
         container: {
@@ -74,6 +82,12 @@ export function InfoContainer(props) {
             <div className={classes.infoText}>
                 Freelance Software Engineer
             </div>
+            <a href="mailto:hello@johnspicer.co.uk" className={classes.emailButton}>
+                <MailOutlineIcon style={{color: "#268bd2"}}/>
+                <div style={{marginLeft: 10, lineHeight: "24px", color: "#268bd2"}}>
+                        hello@johnspicer.com
+                </div>
+            </a>
         </div>
     )
 
