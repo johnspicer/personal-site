@@ -12,6 +12,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import { ProjectContainer } from './features/projects/ProjectContainer';
 import { InfoContainer } from './features/InfoContainer';
 import { AboutMeContainer } from './features/AboutMeContainer';
+import { SkillsContainer } from './features/SkillsContainer';
 import { ContactContainer } from './features/ContactContainer';
 
 const useStyles = makeStyles(theme => ({
@@ -19,7 +20,7 @@ const useStyles = makeStyles(theme => ({
     justifyContent: "center",
     backgroundColor: "#073642",
     alignItems: "center",
-    height: 50,
+    height: 30,
   },
   menuButton: {
     color: "#eee8d5",
@@ -31,7 +32,7 @@ const useStyles = makeStyles(theme => ({
   },
   [theme.breakpoints.up(600)]: {
     appBar: {
-      height: 110
+      height: 30
     },
     menuButton: {
       fontSize: 22,
@@ -48,7 +49,7 @@ function App() {
 
   return (
     <div className="App">
-      <AppBar className={classes.appBar} elevation={0} position="sticky">
+      <AppBar className={classes.appBar} elevation={0}  position="sticky">
         <Toolbar className={classes.toolbar}>
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
             {/*John Spicer*/}
@@ -57,6 +58,7 @@ function App() {
       </AppBar>
       <InfoContainer/>
       <AboutMeContainer />
+      <SkillsContainer />
       <ProjectContainer/>
       <ContactContainer/>
       <AppBar className={classes.appBar} elevation={0} position="sticky">
