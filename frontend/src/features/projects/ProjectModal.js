@@ -4,8 +4,6 @@ import Modal from '@material-ui/core/Modal';
 import Grid from '@material-ui/core/Grid';
 import Fade from '@material-ui/core/Fade';
 import CloseIcon from '@material-ui/icons/Close';
-import GridList from '@material-ui/core/GridList';
-import GridListTile from '@material-ui/core/GridListTile';
 import { makeStyles } from '@material-ui/core/styles';
 import { DeviceContainer } from './DeviceContainer';
 
@@ -18,7 +16,6 @@ const useStyles = makeStyles(theme => ({
     paper: {
         height: '100%',
         width: '100%',
-        backgroundColor: 'white',
         textAlign: "center",
         outline: 'none',
         overflow: "scroll",
@@ -93,16 +90,6 @@ export function ProjectModal(props) {
                 />
             )
         });
-
-    const images = props.projectInfo.images
-        .map(image => {
-            const imageURL = `/data/${image}`;
-            return (
-                <GridListTile key={image} cols={1}>
-                    <img src={imageURL} />
-                </GridListTile>
-            );
-        })
 
     const breakpoints = props.projectInfo.device.startsWith("iphone") ? {
         xs: 12,

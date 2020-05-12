@@ -1,8 +1,5 @@
 import React from 'react';
-import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
-import { ProjectCard } from './ProjectCard';
-import useMediaQuery from '@material-ui/core/useMediaQuery';
 import MobileStepper from '@material-ui/core/MobileStepper';
 import Button from '@material-ui/core/Button';
 import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
@@ -12,7 +9,7 @@ import SwipeableViews from 'react-swipeable-views';
 const useStyles = makeStyles(theme => ({
   [theme.breakpoints.down(399)]: {
     device: props => ({
-      marginLeft: props.deviceName == "macbook-pro" ? "-36px": "auto",
+      marginLeft: props.deviceName === "macbook-pro" ? "-36px": "auto",
       marginRight: "auto",
     }),
   },
@@ -58,10 +55,9 @@ const useStyles = makeStyles(theme => ({
 export function DeviceContainer(props) {
   const classes = useStyles(props);
   const images = props.images;
-  const matches = useMediaQuery('(min-width:1px)');
-          {/*<video className="device-content" autoplay loop>
-            <source src="/data/redeem-2.mp4" type="video/mp4"/>
-          </video>*/}
+  {/*<video className="device-content" autoplay loop>
+    <source src="/data/redeem-2.mp4" type="video/mp4"/>
+  </video>*/}
   const [activeStep, setActiveStep] = React.useState(0);
 
   const handleNext = () => {
