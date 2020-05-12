@@ -7,7 +7,7 @@ import data from '../../data/data.json';
 const useStyles = makeStyles(theme => ({
   [theme.breakpoints.up(0)]: {
     container: {
-      backgroundColor: "#eee8d5",
+      backgroundColor: "#fdf6e3",
       paddingTop: 20,
     },
     gridContainer: {
@@ -19,7 +19,7 @@ const useStyles = makeStyles(theme => ({
         fontSize: 28,
         paddingTop: 10,
         paddingBottom: 10,
-        color: "#268bd2",
+        color: "#dc322f",
     },
     text: {
       maxWidth: 320,

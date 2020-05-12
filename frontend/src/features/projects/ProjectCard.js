@@ -18,7 +18,7 @@ const useStyles = makeStyles(theme => ({
             marginBottom: 40,
             backgroundColor: "#002b36",
             '&:hover': {
-               background: "#6c71c4",
+               background: "#268bd2",
             },
         },
         cardTitle: {
