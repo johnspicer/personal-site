@@ -1,6 +1,7 @@
 import React from 'react';
 import Card from '@material-ui/core/Card';
 import Grid from '@material-ui/core/Grid';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles(theme => ({
@@ -98,6 +99,7 @@ const useStyles = makeStyles(theme => ({
 
 export function SkillsContainer(props) {
     const classes = useStyles();
+    const matches = useMediaQuery('(max-width:960px)');
 
     const skillsData = [{
         "title": "Python",
@@ -120,10 +122,9 @@ export function SkillsContainer(props) {
             "Day to day work over 5 years with data stores like Elasticsearch, Riak, SQL, Redis and RabbitMQ.",
         ]    
     }, {
-        "title": "Management",
+        "title": "Leadership",
         "subtitles": [
-            "React & React Native",
-            "HTML & CSS",
+            "Experience leading a team of 9 developers and setting technical direction of an enterprise product.",
         ]    
     }, {
         "title": "Management",
@@ -132,6 +133,8 @@ export function SkillsContainer(props) {
             "HTML & CSS",
         ]    
     }]
+
+    const spacing = matches ? 0 : 6;
 
     const cards = skillsData.map((skillData, index) => {
         const {title, subtitles} = skillData;
@@ -184,7 +187,7 @@ export function SkillsContainer(props) {
                     <i>Full Stack Software Developer with 10 years experience</i>
                 </div>
             </div>
-            <Grid container className={classes.textContainer} spacing={6}>
+            <Grid container className={classes.textContainer} spacing={spacing}>
                     {cards}
             </Grid>
         </div>

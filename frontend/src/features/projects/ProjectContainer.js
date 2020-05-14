@@ -7,7 +7,7 @@ import data from '../../data/data.json';
 const useStyles = makeStyles(theme => ({
   [theme.breakpoints.up(0)]: {
     container: {
-      backgroundColor: "#fdf6e3",
+      backgroundColor: "#2aa198",
       paddingTop: 20,
     },
     gridContainer: {
@@ -15,26 +15,36 @@ const useStyles = makeStyles(theme => ({
       marginLeft: "auto",
       marginRight: "auto",
     },
+    titleContainer: {
+        maxWidth:320,
+        marginLeft: "auto",
+        marginRight: "auto",            
+    },
     titleText: {
         fontSize: 28,
         paddingTop: 10,
+        textAlign: "left",
         paddingBottom: 10,
-        color: "#dc322f",
+        lineHeight: "35px",
+        color: "white",
     },
     text: {
       maxWidth: 320,
-      marginLeft: "auto",
-      marginRight: "auto",
       fontSize: 14,
       textAlign: "left",
-      marginBottom: 20,
+      color: "#eee8d5",
+      paddingBottom: 30,
     },
   },
   [theme.breakpoints.up(600)]: {
+      titleContainer: {
+          maxWidth:600,
+      },
       titleText: {
-          fontSize: 36,
-          paddingTop: 30,
-          paddingBottom: 30,
+          fontSize: 58,
+      },
+      text: {
+        fontSize: 21,
       },
       text: {
         fontSize: 18,
@@ -42,14 +52,16 @@ const useStyles = makeStyles(theme => ({
       },      
   },
   [theme.breakpoints.up(870)]: {
+    titleContainer: {
+        maxWidth:870,
+    },
     gridContainer: {
       maxWidth: 870,
       marginLeft: "auto",
       marginRight: "auto",
     },
     text: {
-      fontSize: 18,
-      maxWidth: 870,
+      fontSize: 24,
     },    
   },  
   [theme.breakpoints.up('lg')]: {
@@ -72,11 +84,15 @@ export function ProjectContainer() {
 
   return (
     <div className={classes.container}>
-      <div className={classes.titleText}>
-          Projects
+      <div className={classes.titleContainer}>
+        <div className={classes.titleText}>
+            Projects
+        </div>
       </div>
-      <div className={classes.text}>
-        Below are a selection of projects I've worked on - either in my own time, or on a freelance basis.
+      <div className={classes.titleContainer}>
+        <div className={classes.text}>
+          <i>Some projects I'm really proud of</i>
+        </div>
       </div>
       <Grid className={classes.gridContainer} container>
         {gridItems}

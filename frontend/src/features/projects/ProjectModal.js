@@ -47,7 +47,7 @@ const useStyles = makeStyles(theme => ({
     chip: {
         marginLeft: 5,
         marginBottom: 5,
-        backgroundColor: "#268bd2",
+        backgroundColor: "#2aa198",
         color: "#fdf6e3",
         fontFamily: "Avenir Next",
         fontSize: 18,
