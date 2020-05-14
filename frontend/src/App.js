@@ -19,6 +19,12 @@ const useStyles = makeStyles(theme => ({
     alignItems: "center",
     height: 30,
   },
+  bottomBar: {
+    justifyContent: "center",
+    backgroundColor: "#073642",
+    alignItems: "center",
+    height: 60,
+  },
   menuButton: {
     color: "#eee8d5",
     fontSize: 14,
@@ -58,7 +64,7 @@ function App() {
       <SkillsContainer />
       <ProjectContainer/>
       <ContactContainer/>
-      <AppBar className={classes.appBar} elevation={0} position="sticky">
+      <AppBar className={classes.bottomBar} elevation={0} position="sticky">
         <Toolbar>
           Built by me
           <a href="https://github.com/johnspicer/personal-site" target="_blank" style={{color: "white"}}><GitHubIcon style={{marginLeft: 20}}/></a>
