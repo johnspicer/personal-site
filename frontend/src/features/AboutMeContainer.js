@@ -69,16 +69,6 @@ const useStyles = makeStyles(theme => ({
 export function AboutMeContainer(props) {
     const classes = useStyles();
 
-    // <li>Leading a team of 9 frontend and backend developers</li>
-    //                 <li>Setting technical direction of the product</li>
-    //                 <li>Working daily with multiple <strong>Elasticsearch</strong> clusters, the largest being 100+ nodes</li>
-    //                 <li>Managing the ingestion of 24M data points per day across 5,500 <strong>web crawlers</strong></li>
-    //                 <li>Day to day working with services like <strong>RabbitMQ</strong>, <strong>Redis</strong>, <strong>Riak</strong>, <strong>Memcache</strong> </li>
-    //                 <li>Writing and managing multiple Python web services, in <strong>Django</strong> and <strong>Flask</strong></li>
-    //                 <li>Working across the frontends of multiple services, using <strong>React</strong></li>
-    //                 <li>Provisioning bare metal servers from multiple providers</li>
-    //                 <li>Writing and managing an <strong>Apache Storm</strong> cluster capable of processing thousands of messages per second</li>
-
     return (
         <div className={classes.container}>
             <div className={classes.titleContainer}>
@@ -93,14 +83,11 @@ export function AboutMeContainer(props) {
             </div>
             <Grid container className={classes.textContainer} spacing={4}>
                 <Grid item xs={12} md={6}>
-                    I'm a full stack software developer with 10 years experience across a range of technologies.
-                    My most recent permanent position has been as a Technical Architect at EDITED, a London based startup where I've worked for 5 1/2 years.
-                    This has involved a large number of responsibilities, such as:
+                    I'm a full stack software developer with 10 years' experience across a range of technologies. I love writing code and solving problems, and I bring this excitement and commitment to any project I'm doing. I am currently a Technical Architect at EDITED, a London based startup, where I lead a team of 9 developers. My role involves setting the technical direction of the product, and of course writing code every day.
+                    
                 </Grid>
                 <Grid item xs={12} md={6}>
-                    I'm a full stack software developer with 10 years experience across a range of technologies.
-                    My most recent permanent position has been as a Technical Architect at EDITED, a London based startup where I've worked for 5 1/2 years.
-                    This has involved a large number of responsibilities, such as:
+                    I have had extensive experience running large enterprise projects, as well as smaller standalone apps. I'm able to communicate the technilaties of a project and understand the bigger vision behind them. If you're looking for someone to run a technical project, however large or small, get in touch, I'd love to hear from you!
                 </Grid>
                 
             </Grid>
