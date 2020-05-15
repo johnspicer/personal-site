@@ -21,6 +21,7 @@ const useStyles = makeStyles(theme => ({
         marginRight: "auto",            
     },
     titleText: {
+        marginLeft: 20,
         fontSize: 28,
         paddingTop: 10,
         textAlign: "left",
@@ -29,6 +30,7 @@ const useStyles = makeStyles(theme => ({
         color: "white",
     },
     text: {
+      marginLeft: 20,
       maxWidth: 320,
       fontSize: 14,
       textAlign: "left",
@@ -45,9 +47,6 @@ const useStyles = makeStyles(theme => ({
       },
       text: {
         fontSize: 21,
-      },
-      text: {
-        fontSize: 18,
         maxWidth: 600,
       },      
   },

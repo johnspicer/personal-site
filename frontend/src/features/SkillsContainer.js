@@ -126,12 +126,6 @@ export function SkillsContainer(props) {
         "subtitles": [
             "Experience leading a team of 9 developers and setting technical direction of an enterprise product.",
         ]    
-    }, {
-        "title": "Management",
-        "subtitles": [
-            "React & React Native",
-            "HTML & CSS",
-        ]    
     }]
 
     const spacing = matches ? 0 : 6;

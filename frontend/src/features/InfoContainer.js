@@ -57,8 +57,8 @@ const useStyles = makeStyles(theme => ({
             width: 960,
         },
         avatar: {   
-            width: 300, 
-            height:300, 
+            width: 350, 
+            height:350, 
         },
         titleText: {
             fontSize: 36,
@@ -85,7 +85,7 @@ export function InfoContainer(props) {
                     <Box className={classes.avatarContainer}>
                         <img
                         className={classes.avatar}
-                        src="https://www.nicepng.com/png/detail/810-8105444_male-placeholder.png"
+                        src="data/me.png"
                         />
                     </Box>
                 </Grid>
@@ -101,7 +101,7 @@ export function InfoContainer(props) {
                         <a href="mailto:hello@johnspicer.co.uk" className={classes.emailButton}>
                             <MailOutlineIcon style={{color: "#268bd2"}}/>
                             <div style={{marginLeft: 10, lineHeight: "24px", color: "#268bd2"}}>
-                                    hello@johnspicer.com
+                                    hello@johnspicer.co.uk
                             </div>
                         </a>
                     </div>

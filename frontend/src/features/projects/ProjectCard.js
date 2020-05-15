@@ -16,21 +16,21 @@ const useStyles = makeStyles(theme => ({
             marginRight: "auto",
             marginLeft: "auto",
             marginBottom: 40,
-            backgroundColor: "#eee8d5",
+            backgroundColor: "white",
+            border: "3px solid transparent",
             '&:hover': {
-               background: "#268bd2",
+               border: "3px solid #268bd2",
             },
         },
         cardTitle: {
             fontSize: 22,
-            color: "#073642",
+            color: "#268bd2",
             fontFamily: "Avenir Next",
         },
         icon: {
             fontSize: 175,
-            // height: 200,
             marginTop: 20,
-            color: "#073642",
+            color: "#268bd2",
         }
     },
     [theme.breakpoints.up(600)]: {
@@ -79,15 +79,10 @@ const useStyles = makeStyles(theme => ({
 
 export function ProjectCard(props) {
     const [showModal, setShowModal] = React.useState(false);
-    const [isHovered, setIsHovered] = React.useState(false);
-    const classes = useStyles({ isHovered });
+    const classes = useStyles();
 
     const handleProjectCardClick = () => {
         setShowModal(true);
-    };
-
-    const toggleProjectCardHover = () => {
-        setIsHovered(!isHovered);
     };
 
     const handleCloseModal = () => {
@@ -108,8 +103,6 @@ export function ProjectCard(props) {
     return (
         <Card className={classes.card} elevation={0}>
             <CardActionArea
-                onMouseEnter={toggleProjectCardHover}
-                onMouseLeave={toggleProjectCardHover}
                 onClick={handleProjectCardClick}
             >
                 <IconComponent className={classes.icon}/>

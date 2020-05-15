@@ -57,6 +57,14 @@ const useStyles = makeStyles(theme => ({
         marginRight: "auto",
         marginLeft: "auto",
     },
+    testimonial: {
+        fontStyle: "italic",
+        marginTop: 30,
+    },
+    testimonialPerson: {
+        fontStyle: "italic",
+        color:"#2aa198"
+    },
     [theme.breakpoints.up('lg')]: {
         grid: {
             width: 500,
@@ -99,6 +107,20 @@ export function ProjectModal(props) {
         md: 12,
     };
 
+    const renderTestimonial = () => {
+        if (props.projectInfo.testimonial) {
+            return (
+                <div className={classes.testimonial}>
+                    "{props.projectInfo.testimonial}"
+                    <div className={classes.testimonialPerson}>
+                    {props.projectInfo.testimonialPerson}
+                    </div>
+                </div>
+            )
+        }
+        return null;
+    };
+
     return (
         <Modal
             open={true}
@@ -120,6 +142,7 @@ export function ProjectModal(props) {
                                 <br/>
                                 <br/>
                                 {props.projectInfo.content2}
+                                {renderTestimonial()}
                             </Grid>
                             <Grid item xs={breakpoints.xs} md={breakpoints.md}>
                                 <DeviceContainer deviceName={props.projectInfo.device} images={props.projectInfo.images}/>
@@ -128,7 +151,7 @@ export function ProjectModal(props) {
                         {/*<GridList cellHeight={700} className={classes.gridList} cols={2}>
                             {images}
                         </GridList>*/}
-                        {/*<iframe height="700" width="700" src="https://johnspicer.github.io/boids/?height=680"></iframe>*/}
+                        {/*<iframe height="800" width="800" src="https://johnspicer.github.io/boids/?height=800"></iframe>*/}
                     </div>
                 </div>
 
