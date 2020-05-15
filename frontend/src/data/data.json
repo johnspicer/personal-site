@@ -2,8 +2,8 @@
   {
     "title": "Redeem App",
     "slug": "project-1",
-    "content": "I was hired by The Redeem Network to build an iOS/Android app that would facilitate the donation of gifts to the homeless.",
-    "content2": "The app allows users to login, see a geolocated list of nearby partner stores, and purchase a gift for homeless person at any of them. The store will then be notified and the gift can be redeemed upon collection, when payment will be taken. It is built using React Native, with Google Firebase as the backend. Payments are handled using Stripe. The project delivered a feature complete prototype, available for testing on the App Store/Google Play",
+    "content": "I was hired by Redeem Network to build an iOS/Android app that would facilitate the donation of gifts to the homeless.",
+    "content2": "The app allows users to login, see a geolocated list of nearby partner stores, and purchase a gift for a homeless person at any of them. The store will then be notified and the gift can be redeemed upon collection, when payment will be taken. It is built using React Native, with Google Firebase as the backend. Payments are handled using Stripe. The project delivered a feature complete prototype, available for testing on the App Store/Google Play",
     "technologies": [
       "React Native",
       "Stripe",
@@ -11,7 +11,9 @@
     ],
     "icon": "phone",
     "images": ["redeem-1.png","redeem-2.png","redeem-3.png","redeem-4.png","redeem-5.png","redeem-6.png","redeem-7.png"],
-    "device": "iphone-x"
+    "device": "iphone-x",
+    "testimonial": "It was a real pleasure to work with John on our mobile app. He showed great initiative and enthusiasm in pitching for the work initially and didn't disappoint with delivery. He used a mixture of technologies both familiar and new to him to ensure we had the best product possible. John is really easy to communicate with which is vital for any successful project, and we hope we can work with him again in future.",
+    "testimonialPerson": "Darren Smillie, Co-Founder, Redeem Network"
   },
   {
     "title": "Fieldworks Platform",
