@@ -87,7 +87,7 @@ export function AboutMeContainer(props) {
                     
                 </Grid>
                 <Grid item xs={12} md={6}>
-                    I have had extensive experience running large enterprise projects, as well as smaller standalone apps. I'm able to communicate the technilaties of a project and understand the bigger vision behind them. If you're looking for someone to run a technical project, however large or small, get in touch, I'd love to hear from you!
+                    I have had extensive experience running large enterprise projects, as well as smaller standalone apps. I'm able to communicate the technicalities of a project and understand the bigger vision behind them. If you're looking for someone to run a technical project, however large or small, get in touch, I'd love to hear from you!
                 </Grid>
                 
             </Grid>
