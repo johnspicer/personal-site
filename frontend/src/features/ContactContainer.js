@@ -4,7 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles(theme => ({
     [theme.breakpoints.up(0)]: {
         container: {
-            backgroundColor: "#fdf6e3",
+            backgroundColor: "#eee8d5",
             paddingBottom: 10,
             paddingTop: 20,
         },

@@ -16,7 +16,7 @@ const useStyles = makeStyles(theme => ({
             marginRight: "auto",
             marginLeft: "auto",
             marginBottom: 40,
-            backgroundColor: "white",
+            backgroundColor: "#eee8d5",
             border: "3px solid transparent",
             '&:hover': {
                border: "3px solid #268bd2",
@@ -24,13 +24,13 @@ const useStyles = makeStyles(theme => ({
         },
         cardTitle: {
             fontSize: 22,
-            color: "#268bd2",
+            color: "#073642",
             fontFamily: "Avenir Next",
         },
         icon: {
             fontSize: 175,
             marginTop: 20,
-            color: "#268bd2",
+            color: "#073642",
         }
     },
     [theme.breakpoints.up(600)]: {

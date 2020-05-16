@@ -7,7 +7,9 @@ import MailOutlineIcon from '@material-ui/icons/MailOutline';
 const useStyles = makeStyles(theme => ({
     [theme.breakpoints.up(0)]: {
         container: {
-            height: 370,
+            paddingTop: 20,
+            paddingBottom: 20,
+            height: 320,
             width: "100%",
             backgroundColor: "#eee8d5",
         },
@@ -50,6 +52,8 @@ const useStyles = makeStyles(theme => ({
     },
     [theme.breakpoints.up('md')]: {
         container: {
+            paddingTop: 0,
+            paddingBottom: 0,
             height: 650,
             width: "100%",
         },

@@ -22,7 +22,7 @@ const useStyles = makeStyles(theme => ({
             marginRight: "auto",            
         },
         textContainer: {
-            fontSize: 14,
+            fontSize: 16,
             maxWidth: 320,
             marginLeft: "auto",
             marginRight: "auto",
