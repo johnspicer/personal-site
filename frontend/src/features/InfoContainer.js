@@ -88,6 +88,7 @@ export function InfoContainer(props) {
                 <Grid className={classes.gridCell} item xs={12} md={6}>
                     <Box className={classes.avatarContainer}>
                         <img
+                        alt=""
                         className={classes.avatar}
                         src="data/me.png"
                         />

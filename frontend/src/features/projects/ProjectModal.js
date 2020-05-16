@@ -93,6 +93,7 @@ export function ProjectModal(props) {
         .map(tech => {
             return (
                 <Chip
+                    key={tech}
                     className={classes.chip}
                     label={tech}
                 />

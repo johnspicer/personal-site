@@ -67,7 +67,7 @@ function App() {
       <AppBar className={classes.bottomBar} elevation={0} position="sticky">
         <Toolbar>
           Built by me
-          <a href="https://github.com/johnspicer/personal-site" target="_blank" style={{color: "white"}}><GitHubIcon style={{marginLeft: 20}}/></a>
+          <a href="https://github.com/johnspicer/personal-site" target="_blank" rel="noopener noreferrer" style={{color: "white"}}><GitHubIcon style={{marginLeft: 20}}/></a>
         </Toolbar>
       </AppBar>
     </div>

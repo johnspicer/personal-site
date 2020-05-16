@@ -55,9 +55,6 @@ const useStyles = makeStyles(theme => ({
 export function DeviceContainer(props) {
   const classes = useStyles(props);
   const images = props.images;
-  {/*<video className="device-content" autoplay loop>
-    <source src="/data/redeem-2.mp4" type="video/mp4"/>
-  </video>*/}
   const [activeStep, setActiveStep] = React.useState(0);
 
   const handleNext = () => {
@@ -85,7 +82,7 @@ export function DeviceContainer(props) {
             >
               {images.map((image, index) => (
                 <div key={index}>
-                  <img className="device-content" src={`data/${image}`}/>
+                  <img className="device-content" alt="" src={`data/${image}`}/>
                 </div>
               ))}
             </SwipeableViews>

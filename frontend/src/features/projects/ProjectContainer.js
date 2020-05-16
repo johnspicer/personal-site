@@ -75,7 +75,7 @@ export function ProjectContainer() {
 
   const gridItems = data.map(project => {
       return (
-        <Grid item xs={12} sm={4}>
+        <Grid key={project.title} item xs={12} sm={4}>
           <ProjectCard projectInfo={project}/>
         </Grid>
       );

@@ -134,7 +134,7 @@ export function SkillsContainer(props) {
         const {title, subtitles} = skillData;
 
         return (
-            <Grid item  xs={12} sm={6} md={4}>
+            <Grid key={title} item xs={12} sm={6} md={4}>
                 <Card className={classes.card} elevation={0}>
                     <div style={{display: "flex"}}>
                         <div className={classes.cardNumber}>{index+1}</div>
@@ -146,7 +146,7 @@ export function SkillsContainer(props) {
                     {
                         subtitles.map(subtitle => {
                             return (
-                                <div style={{}}>
+                                <div key={subtitle}>
                                     {subtitle}
                                 </div>
                             );
