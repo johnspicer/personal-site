@@ -25,7 +25,6 @@ const useStyles = makeStyles(theme => ({
         fontSize: 28,
         paddingTop: 10,
         textAlign: "left",
-        paddingBottom: 10,
         lineHeight: "35px",
         color: "white",
     },
@@ -44,6 +43,8 @@ const useStyles = makeStyles(theme => ({
       },
       titleText: {
           fontSize: 58,
+          paddingBottom: 10,
+
       },
       text: {
         fontSize: 21,
