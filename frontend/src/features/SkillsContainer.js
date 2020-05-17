@@ -124,7 +124,7 @@ export function SkillsContainer(props) {
     }, {
         "title": "Leadership",
         "subtitles": [
-            "Experience leading a team of 9 developers and setting technical direction of an enterprise product.",
+            "Currently leading a team of 9 developers and involved in setting the technical direction of an enterprise product.",
         ]    
     }]
 
